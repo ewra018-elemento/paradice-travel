@@ -1,0 +1,544 @@
+ @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap'); /* estilo de la tipografia de los h1*/
+/* 1. EFECTO ACTIVO EN EL MENÚ */
+.nav-enlaces a.activo
+ {
+    background-color: #ff9f43; /* El naranja cálido de tu marca */
+    color: #1a1a1a;            /* Texto oscuro para que se lea perfecto */
+    font-weight: bold;         /* Resalta la letra */
+    box-shadow: 0 2px 8px rgba(255, 159, 67, 0.4); /* Un brillo sutil */
+ }
+/* 2. Estilos generales con fondo tono arena muy suave */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #feffff; /* Un color crema/arena muy claro del logo */
+    color: #1a1a1a; /* El negro del texto de Paradise Travel */
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* 3. Encabezado con el Turquesa del mar de tu logo */
+header {
+    background-color: #00a0a5; /* El turquesa vivo del agua */
+    color: #f7e7d6; /* Texto blanco para que resalte */
+    padding: 4
+    30px 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Pacifico', cursive; /* ← ESTA LÍNEA APLICA LA LETRA DEL LOGO */
+    font-size: 3.5rem; /* La agrandamos un poco porque esta fuente suele verse más chica */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    letter-spacing: 1px;
+}
+
+header p {
+    color: #ffe6a3; /* El amarillo claro del sol en el texto secundario */
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+
+/* 4. Caja principal blanca para formularios y secciones */
+main {
+    flex: 1;
+    max-width: 500px;
+    width: 90%;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 35px;
+    border-radius: 20px;
+    border-top: 5px solid #00a0a5; /* linea turquesa arriba decorativa*/
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+}
+main h2 {
+    color: #00a0a5;
+    margin-bottom: 25px;
+}
+
+/* 5. Inputs estilizados  con animación */
+input {
+    width: 95%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.3s ease;
+}
+/* Efecto cuando el usuario va a escribir en la caja */
+input:focus {
+    border-color: #00a0a5; /* El borde cambia al turquesa del logo */
+    box-shadow: 0 0 8px rgba(0, 160, 165, 0.2); /* Resplandor suave */
+    background-color: #f0fdfa; /* Fondo sutilmente azulado */
+}
+
+/* 6. Botones con el Naranja- Amarillo Atardecer del logo */
+button, .boton-enlace {
+    display: inline-block;
+    background-color: #ff9f43; /* El naranja cálido del atardecer */
+    color: #1a1a1a; /* Texto oscuro como las letras del logo */
+    padding: 14px 30px;
+    border: none;
+    border-radius: 50px; /* Bordes más redondeados y amigables */
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto al pasar el mouse por encima del botón */
+button:hover, .boton-enlace:hover {
+    background-color: #00a0a5; /* Cambia a turquesa al pasar el mouse */
+    color: white;
+    transform: translateY(-3px); /* Pequeño salto animado */
+    box-shadow: 0 6px 15px rgba(0, 160, 165, 0.4);
+}
+/* 7. Pie de página institucional (Footer) */
+footer {
+    background-color: #1a1a1a; /* Negro del logo */
+    color: #ffffff;
+    padding: 15px;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+/* 8. Estilo personalizado para el logo del encabezado */
+.logo-agencia {
+    max-width: 130px; /* Controla qué tan grande se verá el logo */
+    height: auto;     /* Mantiene las proporciones de la imagen para que no se deforme */
+    border-radius: 50%; /* Hace que el borde sea redondeado si lo deseas */
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Le da una sombra suave */
+}
+/* 9. Estilo para el logo al inicio del texto (en la misma línea) */
+.logo-linea {
+    width: 70px;         /* Tamaño ideal para que quepa al lado del texto */
+    height: auto;
+    vertical-align: middle; /* ¡Este es el truco! Alinea la imagen perfectamente con las letras */
+    margin-right: 15px;  /* Le da un espacio elegante entre el logo y el texto */
+}
+/* 10. Estilo exclusivo para el logo de la página de error */
+.logo-paradise-error {
+    max-width: 100px; /* ← Aquí pones el tamaño que quieras (por ejemplo, más chico que el index) */
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+/* 11. Estilo exclusivo para el logo de la página de registro */
+.logo-paradise-registro {
+    max-width: 100px; /* ← Aquí pones el tamaño que quieras (por ejemplo, más chico que el index) */
+    height: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+/* 12. BARRA DE NAVEGACIÓN MODERNA (NAVBAR) */
+.navbar {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    .nav-marca-enlace {
+    text-decoration: none;
+}
+}
+
+.nav-marca {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.nav-mini-logo {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-enlaces {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-enlaces li {
+    margin-left: 20px;
+}
+
+.nav-enlaces a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-enlaces a:hover {
+    background-color: #ff9f43;
+    color: #1a1a1a;
+    font-weight: bold;
+}
+
+/* 11. EFECTO ACTIVO EN EL MENÚ */
+.nav-enlaces a.activo {
+    background-color: #ff9f43;
+    color: #1a1a1a;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(255, 159, 67, 0.4);
+}
+/* ==========================================
+   12. SECCIÓN DEL CATÁLOGO DE TARJETAS (CARDS)
+   ========================================== */
+
+/* Contenedor que alinea las tarjetas de lado a lado */
+.catalogo-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estructura individual de cada tarjeta */
+.tarjeta-destino {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto visual al pasar el mouse por encima */
+.tarjeta-destino:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor de la foto */
+.tarjeta-imagen {
+    position: relative;
+    height: 200px;
+    background-color: #ddd; /* Fondo gris por si no carga la foto */
+}
+
+.tarjeta-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Etiqueta flotante para el sorteo del Eje Cafetero */
+.etiqueta-destacado {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff9f43; /* Naranja de tu marca */
+    color: #1a1a1a;
+    padding: 5px 12px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Espaciado del contenido interno */
+.tarjeta-cuerpo {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: left;
+}
+
+.tarjeta-cuerpo h3 {
+    margin: 0 0 10px 0;
+    color: #00a0a5; /* El turquesa del logo */
+    font-size: 1.3rem;
+}
+
+.tarjeta-descripcion {
+    font-size: 0.9rem;
+    color: #555555;
+    line-height: 1.4;
+    margin: 0 0 20px 0;
+    flex-grow: 1; /* Hace que todas las descripciones ocupen el mismo espacio */
+}
+
+/* Sección interna de precios */
+.tarjeta-precio {
+    border-top: 1px solid #eeeeee;
+    padding-top: 15px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-precio span {
+    font-size: 0.75rem;
+    color: #888888;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tarjeta-precio p {
+    margin: 5px 0 0 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.tarjeta-precio small {
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+/* Botón de acción interno de la tarjeta */
+.boton-tarjeta {
+    display: block;
+    text-align: center;
+    background-color: #00a0a5;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.boton-tarjeta:hover {
+    background-color: #ff9f43; /* Cambia al naranja en hover */
+    color: #1a1a1a;
+}
+/* ==========================================
+   13. MINIATURAS PARA MÚLTIPLES IMÁGENES
+   ========================================== */
+
+/* Contenedor de la galería dentro de la tarjeta */
+.tarjeta-imagen-galeria {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Área de la foto principal */
+.imagen-principal {
+    position: relative;
+    height: 180px;
+    background-color: #ddd;
+}
+
+.imagen-principal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fila de imágenes pequeñas */
+.tarjeta-miniaturas {
+    display: flex;
+    gap: 5px;
+    padding: 8px 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #eeeeee;
+}
+
+/* Estilo de cada miniatura */
+.miniatura {
+    width: 450px;
+    height: 335px;
+    object-fit: cover;
+    border-radius: 4px;
+    cursor: pointer;
+    opacity: 0.6;
+    border: 1px solid #ddd;
+    transition: all 0.2s ease;
+}
+
+/* Efecto al pasar el mouse o cuando esté seleccionada */
+.miniatura:hover, .miniatura.activa {
+    opacity: 1;
+    border-color: #00a0a5; /* El turquesa de tu marca */
+    transform: scale(1.05);
+}   
+/* ==========================================
+   14. EFECTO DE SUPERPOSICIÓN INTERACTIVA (HOVER OVERLAP)
+   ========================================== */
+
+/* Contenedor de la tarjeta */
+.tarjeta-destino-interactiva {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 600px; /* Un ancho equilibrado para que se note el solape */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+/* Espacio donde las imágenes flotan y se enciman */
+.galeria-superpuesta {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 480px; /* Altura controlada para tus imágenes de 450px de ancho */
+    background-color: #fcfbfa;
+    padding: 30px 10px;
+}
+
+/* Base para los folletos individuales */
+.wrapper-flyer {
+    position: absolute; /* Permite poner uno encima de otro */
+    width: 320px; /* Ancho visual de la muestra */
+    transition: transform 0.4s ease, z-index 0s, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.wrapper-flyer img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* --- POSICIONAMIENTO INICIAL (EFECTO ABANICO) --- */
+
+/* El de la izquierda se tira un poco al centro y está abajo */
+.flyer-izquierdo {
+    left: 80px;
+    z-index: 1;
+    transform: rotate(-3deg); /* Le da un toque dinámico inclinado */
+}
+
+/* El de la derecha se monta encima por defecto */
+.flyer-derecho {
+    right: 80px;
+    z-index: 2;
+    transform: rotate(3deg);
+}
+
+/* --- COMPORTAMIENTO INTERACTIVO (AL PASAR EL CURSOR) --- */
+
+/* Regla de oro: El flyer que toques se va al frente (z-index máximo) y se endereza */
+.wrapper-flyer:hover {
+    z-index: 10 !important;
+    transform: scale(1.05) rotate(0deg); /* Se agranda un poquito y se alinea derecho */
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* REGLA RESPONSIVE: En celulares se apilan de forma normal */
+@media (max-width: 650px) {
+    .tarjeta-destino-interactiva {
+        width: 100%;
+        max-width: 340px;
+    }
+    .galeria-superpuesta {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .wrapper-flyer {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100%;
+        transform: none !important;
+    }
+}
+/* ==========================================
+   15. BANNER PRINCIPAL (HERO SECTION)
+   ========================================== */
+
+.hero-banner {
+    /* Ajustamos el fondo local con tu nueva imagen de neón */
+    background-image: linear-gradient(rgba(10, 35, 36, 0.4), rgba(10, 35, 36, 0.5)), url(fonde\ banner.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 20px;
+}
+
+/* Caja de contenido interno */
+.hero-contenido {
+    max-width: 800px;
+}
+
+/* Título principal con sintonía en la sombra */
+.hero-contenido h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 2px 2px 10px rgba(0, 32, 33, 0.8);
+}
+
+/* Subtítulo */
+.hero-contenido p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+    color: #f1f5f5;
+    text-shadow: 1px 1px 6px rgba(0, 32, 33, 0.8);
+}
+
+/* Botón de llamado a la acción con tu color turquesa institucional */
+.boton-hero {
+    display: inline-block;
+    background-color: #00a0a5; /* El turquesa de tu marca */
+    color: #ffffff;
+    padding: 14px 35px;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(0, 160, 165, 0.4);
+    transition: all 0.3s ease;
+}
+
+/* Efecto al pasar el mouse por el botón: Cambia al naranja vibrante */
+.boton-hero:hover {
+    background-color: #ff9f43; /* El naranja de tu marca */
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 159, 67, 0.4);
+}
+
+/* Ajuste responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+    .hero-banner {
+        height: 350px;
+    }
+    .hero-contenido h1 {
+        font-size: 2rem;
+    }
+    .hero-contenido p {
+        font-size: 1rem;
+    }
+}
