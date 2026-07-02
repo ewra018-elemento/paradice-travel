@@ -2,29 +2,34 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Error en el Sistema</title>
-    <link rel="stylesheet" href="estilos.css">
-</head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error en el Sistema - Paradise Travel</title>
+    <link rel="stylesheet" href="css/estilos.css">
+ </head>
 <body>
-<nav class="navbar">
-        <a href="index.html" class="nav-marca-enlace">
-            <div class="nav-marca">
-                <img src="logo paradise.png<img src="logo paraíso.png" alt="Mini logotipo" class="nav-mini-logo">" alt="Mini Logo" class="nav-mini-logo">
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="nav-marca">
+        <div class="nav-marca-contenedor">
+            <a href="index.html" class="nav-marca-enlace">
+                <!-- Ruta corregida apuntando a la carpeta img -->
+                <img src="img/logo paradise.png" alt="Logo Paradise Travel" class="nav-logo-img" width="50">
                 <span>Paradise Travel</span>
-            </div>
-        </a>
-        <ul class="nav-enlaces">
-            <li><a href="index.html" class="activo">Inicio</a></li>
-            <li><a href="login.html">Ingresar</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-        </ul>
-    </nav>  
+            </a>
+            
+            <ul class="nav-enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+               <li><a href="error.html" class="activo">Sistema</a></li>
+            </ul>
+        </div>
+    </nav>
 
+    <main style="text-align: center; padding: 100px 20px;">
     <header>
-
-        <h1>¡Ups! Algo salió mal</h1>
-    </header>
-    <main>
+       <h1>¡Ups! Algo salió mal</h1>
+   </header>
         <section>
             <h2>Notificación del Sistema</h2>
             <p>La acción no pudo completarse debido a un error en los datos ingresados o pérdida de conexión.</p>

@@ -2,135 +2,189 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido a Paradise Travel</title>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-<nav class="navbar">
-        <a href="index.html" class="nav-marca-enlace">
-            <div class="nav-marca">
-                <img src="logo paradise.png" alt="Mini Logo" class="nav-mini-logo">
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="nav-marca">
+        <div class="nav-marca-contenedor">
+            <a href="index.html" class="nav-marca-enlace">
+                <!-- Ruta corregida apuntando a la carpeta img -->
+                <img src="img/logo paradise.png" alt="Logo Paradise Travel" class="nav-logo-img" width="50">
                 <span>Paradise Travel</span>
-            </div>
-        </a>
-        <ul class="nav-enlaces">
-            <li><a href="index.html" class="activo">Inicio</a></li>
-            <li><a href="login.html">Ingresar</a></li>
-            <li><a href="registro.html">Registrarse</a></li>
-        </ul>
+            </a>
+
+            <ul class="nav-enlaces">
+                <li><a href="index.html" class="activo">"Inicio</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html">Registrarse</a></li>
+                <li><a href="error.html">Sistema</a></li>
+            </ul>
+        </div>
     </nav>
 
-<main>
-        <!-- SECCIÓN BIENVENIDA (Ya la tienes) -->
-        <section class="bienvenida">
-            <!-- BANNER DE BIENVENIDA (HERO SECTION) -->
-        <section class="hero-banner">
-            <div class="hero-contenido">
-                <h1>Viaja al Paraíso con Paradise Travel</h1>
-                <p>Descubre los destinos nacionales más espectaculares con planes todo incluido y la comodidad que mereces.</p>
-            <h2>Explora Nuestros Destinos</h2>
-            <p>Ofrecemos los mejores paquetes turísticos nacionales todo incluido.</p>
-        </section>
+    <!-- BANNER PRINCIPAL -->
+    <section class="hero-banner">
+        <div class="hero-contenido">
+            <h1>Viaja al Paraíso con Paradise Travel</h1>
+            <p><strong>Los destinos nacionales más espectaculares con planes todo incluido y la comodidad que mereces.</strong> </p>
+        </div>
+    </section>
 
-        <!-- CONTENEDOR PRINCIPAL DEL CATÁLOGO -->
-        <section class="catalogo-contenedor">
-            
-     <!-- TARJETA DEL EJE CAFETERO CON EFECTO INTERACTIVO -->
-            <div class="tarjeta-destino-interactiva">
-                
-                <!-- LOS FLYERS SE SUPERPONEN AQUÍ -->
-                <div class="galeria-superpuesta">
-                    <div class="wrapper-flyer flyer-izquierdo">
-                        <img src="fl 1 del eje.jpeg" alt="Flyer 1 Eje Cafetero">
-                    </div>
-                    <div class="wrapper-flyer flyer-derecho">
-                        <img src="fl 2 eje.jpeg" alt="Flyer 2 Eje Cafetero">
-                    </div>
+    <!-- AQUÍ EMPIEZA EL MAIN (catálogo de tarjetas) -->
+    <main style="max-width: 1200px; width: 100%; margin: 0 auto; background: none; box-shadow: none; border: none; padding: 0;">
+
+        <!-- Contenedor de  tarjetas interactivas (Eje Cafetero, Cocuy, Ballenas) -->
+        <div class="catalogo-contenedor">
+
+            <!-- Ficha del Nevado del Cocuy -->
+            <div class="tarjeta-destino">
+                <div class="tarjeta-imagen-hover">
+                    <!-- Recuerda renombrar tus archivos o poner el nombre exacto aquí -->
+                    <img src="img/fl 1 cocuy.jpeg" alt="Aventura Nevado del Cocuy" class="foto-frontal">
+                    <img src="img/fl 2 cocuy.jpeg" alt="Formas de Pago Cocuy" class="foto-trasera">
                 </div>
-
-                <!-- TEXTO Y BOTÓN INFERIOR -->
-                <div class="tarjeta-cuerpo-ancho">
-                    <h3>Eje Cafetero 2026</h3>
+                <div class="tarjeta-cuerpo">
+                    <h3>Nevado del Cocuy (3 Días / 2 Noches)</h3>
                     <p class="tarjeta-descripcion">
-                        Pasa el cursor sobre los folletos para alternarlos. Salidas programadas desde Facatativá y Bogotá con todo incluido: Parque del Café, Salento, Filandia y Termales.
-                    </p>
-                    <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
-                </div>
-
-            </div>
-
-        </section>
-
-                <!-- SECCIÓN DEL TEXTO Y BOTÓN ABAJO -->
-                <div class="tarjeta-cuerpo-ancho">
-                    <h3>Eje Cafetero 2026</h3>
-                    <p class="tarjeta-descripcion">
-                        Disfruta de un viaje inolvidable con salidas desde Facatativá y/o Bogotá. Visita el Parque del Café, Valle de Cocora, Salento, Filandia y Termales de Santa Rosa. Incluye transporte, hotel con piscina y alimentación. ¡Aparta tu cupo hoy mismo!
-                    </p>
-                    <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
-                </div>
-
-            </div>
-
-        </section>
-            <!-- TARJETA 2: NEVADO DEL COCUY INTERACTIVA -->
-            <div class="tarjeta-destino-interactiva">
-                
-                <!-- LOS FLYERS DEL COCUY SE SUPERPONEN AQUÍ -->
-                <div class="galeria-superpuesta">
-                     <div class="wrapper-flyer flyer-derecho">
-                        <img src="fl 2 cocuy.jpeg" alt="Flyer 2 Nevado del Cocuy">
-                    </div>
-                    <div class="wrapper-flyer flyer-izquierdo">
-                        <img src="fl 1 cocuy.jpeg" alt="Flyer 1 Nevado del Cocuy">
-                    </div>
-                </div>
-
-                <!-- TEXTO Y BOTÓN INFERIOR COCUY -->
-                <div class="tarjeta-cuerpo-ancho">
-                    <h3>Nevado del Cocuy 2026</h3>
-                    <p class="tarjeta-descripcion">
-                        <strong>¡Aventura de alta montaña!</strong> Salida del 13 al 16 de noviembre desde Facatativá y/o Bogotá. Incluye caminata al Peñón de los Muertos, ascenso al nevado, ingreso a termales, hospedaje en Güicán y transporte 4x4.
+                        ¡Vive la experiencia que cambiará tu vida! <br>
+                        📌<strong>Incluye</strong> •Senderismo de aclimatación •Ascenso al nevado con guías certificados •Transporte 4x4 •Entrada al Parque Nacional•Hospedaje •Alimentación completa •Salidas desde Facatativá y/o Bogotá.
                     </p>
                     <div class="tarjeta-precio" style="border-top: 1px solid #eeeeee; padding-top: 10px; margin-bottom: 15px; text-align: center;">
-                        <span style="font-size: 0.75rem; color: #888;">Valor por Persona</span>
-                        <p style="margin: 5px 0 0 0; font-size: 1.5rem; font-weight: bold; color: #1a1a1a;">$750.000 <small>COP</small></p>
+                        <span style="font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Planes desde</span>
+                        <p style="margin: 5px 0 0 0; font-size: 1.5rem; font-weight: bold; color: #ff9f43;">
+                            $750.000 <small style="font-size: 0.8rem; color: #666;">Adultos</small>
+                            <span style="font-size: 1.1rem; color: #cbd5e1; margin: 0 8px;">|</span>
+                            <span style="font-size: 1.3rem; color: #00a0a5;">$700.000 <small style="font-size: 0.7rem; color: #666;"><strong>Niños</strong></small></span>
+                        </p>
+                    </div>
+                    <a href="#" class="boton-tarjeta">Reservar Cupo</a>
+                </div>
+            </div>
+
+            <!-- Avistamiento de Ballenas - Pacífico -->
+            <div class="tarjeta-destino">
+                <div class="tarjeta-imagen-hover">
+                    <!-- Esta es la que se ve al principio -->
+                    <img class="foto-frontal" src="img/fl 1 ballenas.png" alt="Fl 1 Ballenas">
+                    <img class="foto-trasera" src="img/fl 2 ballenas.png" alt="fl 2 Ballenas">
+                </div>
+                <div class="tarjeta-cuerpo-ancho">
+                    <h3>Avistamiento de Ballenas - Pacífico</h3>
+                    <p class="tarjeta-descripcion">
+                        <strong>¡Un itinerario mágico de 4 días y 3 noches!</strong> Salidas de madrugada desde Facatativá y Bogotá. Viaja con comodidad en transporte terrestre y marítimo hacia <strong>Buenaventura, Juanchaco, Ladrilleros y Bahía Málaga</strong> para vivir el avistamiento, recorrer esteros, manglares y disfrutar de una hermosa tarde de playa en <strong>Playa La Barra</strong>.
+                    </p>
+
+                    <p class="tarjeta-descripcion" style="font-size: 0.85rem; color: #555; margin-top: -10px;">
+                        📅 <strong>Temporada:</strong> Salidas programadas del 17 al 20 de Septiembre. <br>
+                        📌 <strong>Incluye:</strong> Asistencia médica • Guías expertos • Transporte completo • Hospedaje durante 2 noches • Actividades de integración y fogata.
+                    </p>
+
+                    <div class="tarjeta-precio" style="border-top: 1px solid #eeeeee; padding-top: 10px; margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Tarifas por Persona</span>
+                        <p style="margin: 5px 0 0 0; font-size: 1.4rem; font-weight: bold; color: #00a0a5;">
+                            $1'100.000 <small style="font-size: 0.75rem; color: #666; font-weight: normal;"><strong>Antes del 30 de Marzo</strong></small>
+                        </p>
+                        <p style="margin: 3px 0 0 0; font-size: 1.2rem; font-weight: bold; color: #ff9f43;">
+                            $1'250.000 <small style="font-size: 0.75rem; color: #666; font-weight: normal;"><strong>A partir del 31 de Marzo</strong></small>
+                        </p>
+                    </div>
+                    <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
+                </div>
+            </div>
+
+            <!-- Eje Cafetero -->
+            <div class="tarjeta-destino">
+                <div class="tarjeta-imagen-hover">
+                    <!-- Esta es la que se ve al principio -->
+                    <img class="foto-frontal" src="img/fl 1 del eje.jpeg" alt="Fl 1 Ballenas">
+                    <img class="foto-trasera" src="img/fl 2 eje.jpeg" alt="fl 2 Ballenas">
+                </div>
+                <div class="tarjeta-cuerpo-ancho">
+                    <h3><strong>Eje Cafetero</strong></h3>
+                    <p class="tarjeta-descripcion">
+                        <strong>¡Un itinerario mágico de 3 días y 2 noches!</strong> Viaja con comodidad en transporte terrestre <strong>Parque del cafe, Salento, Filandia, Valle del cocora y Termales de san Rosa</strong>.
+                    </p>
+
+                    <p class="tarjeta-descripcion" style="font-size: 0.85rem; color: #555; margin-top: -10px;">
+                        📅 <strong>Fecha:</strong> Salida programadas del 6 al 9 de agosto. <br>
+                        📌 <strong>Incluye:</strong> Asistencia médica • Guías expertos • Transporte completo • Hospedaje durante 2 noches • Actividades de integración.
+                    </p>
+
+                    <div class="tarjeta-precio" style="border-top: 1px solid #eeeeee; padding-top: 10px; margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Tarifas por Persona</span>
+                        <p style="margin: 5px 0 0 0; font-size: 1.4rem; font-weight: bold; color: #00a0a5;">
+                            $750.000 <small style="font-size: 0.75rem; color: #666; font-weight: normal;"><strong>Adultos</strong></small>
+                        </p>
+                        <p style="margin: 3px 0 0 0; font-size: 1.2rem; font-weight: bold; color: #ff9f43;">
+                            $700.000 <small style="font-size: 0.75rem; color: #666; font-weight: normal;"><strong>Niños</strong></small>
+                        </p>
+                    </div>
+                    <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
+                </div>
+            </div>
+
+             <!-- Ficha del Nevado del Cocuy -->
+            <div class="tarjeta-destino">
+                <div class="tarjeta-imagen-hover">
+                    <!-- Recuerda renombrar tus archivos o poner el nombre exacto aquí -->
+                    <img src="img/fl 1 cocuy.jpeg" alt="Aventura Nevado del Cocuy" class="foto-frontal">
+                    <img src="img/fl 2 cocuy.jpeg" alt="Formas de Pago Cocuy" class="foto-trasera">
+                </div>
+                <div class="tarjeta-cuerpo">
+                    <h3>Nevado del Cocuy (3 Días / 2 Noches)</h3>
+                    <p class="tarjeta-descripcion">
+                        ¡Vive la experiencia que cambiará tu vida! <br>
+                        📌<strong>Incluye</strong> •Senderismo de aclimatación •Ascenso al nevado con guías certificados •Transporte 4x4 •Entrada al Parque Nacional•Hospedaje •Alimentación completa •Salidas desde Facatativá y/o Bogotá.
+                    </p>
+                    <div class="tarjeta-precio" style="border-top: 1px solid #eeeeee; padding-top: 10px; margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Planes desde</span>
+                        <p style="margin: 5px 0 0 0; font-size: 1.5rem; font-weight: bold; color: #ff9f43;">
+                            $750.000 <small style="font-size: 0.8rem; color: #666;">Adultos</small>
+                            <span style="font-size: 1.1rem; color: #cbd5e1; margin: 0 8px;">|</span>
+                            <span style="font-size: 1.3rem; color: #00a0a5;">$700.000 <small style="font-size: 0.7rem; color: #666;"><strong>Niños</strong></small></span>
+                        </p>
+                    </div>
+                    <a href="#" class="boton-tarjeta">Reservar Cupo</a>
+                </div>
+            </div>
+
+            <!-- Amazonas -->
+            <div class="tarjeta-destino">
+                <div class="tarjeta-imagen-hover">
+                    <!-- Esta es la que se ve al principio -->
+                    <img class="foto-frontal" src="img/FL amazonas.jpeg" alt="Fl 1 Ballenas">
+                    <img class="foto-trasera" src="   " alt="fl 2 Ballenas">
+                </div>
+                <div class="tarjeta-cuerpo-ancho">
+                    <h3>✈️ ¡Aventura en el Amazonas! 4 Días / 3 Noches</h3>
+                    <p class="tarjeta-descripcion">
+                        <strong>¡Un itinerario mágico de 4 días y 3 noches!</strong> Salidas de madrugada desde Facatativá y Bogotá. Viaja con comodidad en transporte terrestre y marítimo hacia <strong>Buenaventura, Juanchaco, Ladrilleros y Bahía Málaga</strong> para vivir el avistamiento, recorrer esteros, manglares y disfrutar de una hermosa tarde de playa en <strong>Playa La Barra</strong>.
+                    </p>
+
+                    <p class="tarjeta-descripcion" style="font-size: 0.85rem; color: #555; margin-top: -10px;">
+                        📅 <strong>Temporada:</strong> Salidas programadas del 17 al 20 de Septiembre. <br>
+                        📌 <strong>Incluye:</strong> Asistencia médica • Guías expertos • Transporte completo • Hospedaje durante 2 noches • Actividades de integración y fogata.
+                    </p>
+
+                    <div class="tarjeta-precio" style="border-top: 1px solid #eeeeee; padding-top: 10px; margin-bottom: 15px; text-align: center;">
+                        <span style="font-size: 0.75rem; color: #888; text-transform: uppercase; letter-spacing: 1px;">Tarifas por Persona</span>
+                        <p style="margin: 5px 0 0 0; font-size: 1.4rem; font-weight: bold; color: #00a0a5;">
+                            $1'100.000 <small style="font-size: 0.75rem; color: #666; font-weight: normal;"><strong>Antes del 30 de Marzo</strong></small>
+                        </p>
+                        <p style="margin: 3px 0 0 0; font-size: 1.2rem; font-weight: bold; color: #ff9f43;">
+                            $1'250.000 <small style="font-size: 0.75rem; color: #666; font-weight: normal;"><strong>A partir del 31 de Marzo</strong></small>
+                        </p>
                     </div>
                     <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
                 </div>
 
-            </div>
-            <!-- TARJETA 3: SAN ANDRÉS -->
-            <div class="tarjeta-destino">
-                <div class="tarjeta-imagen">
-                    <img src="san-andres.jpg" alt="Paquete San Andrés">
-                </div>
-                <div class="tarjeta-cuerpo">
-                    <h3>San Andrés e Islas</h3>
-                    <p class="tarjeta-descripcion">Relájate en el mar de los siete colores con tiquetes, hotel frente a la playa y tours marítimos incluidos.</p>
-                    <div class="tarjeta-precio">
-                        <span>Precio Final</span>
-                        <p>$1'850.000 <small>COP</small></p>
-                    </div>
-                    <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
-                </div>
-                  <!-- TARJETA 2: cocuy -->
-            <div class="tarjeta-destino">
-                <div class="tarjeta-imagen">
-                    <img src="san-andres.jpg" alt="Paquete San Andrés">
-                </div>
-                <div class="tarjeta-cuerpo">
-                    <h3>Nevado del Cocuy</h3>
-                    <p class="tarjeta-descripcion">Relájate en el mar de los siete colores con tiquetes, hotel frente a la playa y tours marítimos incluidos.</p>
-                    <div class="tarjeta-precio">
-                        <span>Precio Final</span>
-                        <p>$1'850.000 <small>COP</small></p>
-                    </div>
-                    <a href="registro.html" class="boton-tarjeta">Reservar Cupo</a>
-                </div>
-            </div>
+        </div>
+        <!-- fin catalogo-contenedor -->
 
-        </section>
     </main>
 
 </body>

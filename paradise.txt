@@ -1,0 +1,81 @@
+=======================================================================
+               RESUMEN TÉCNICO DE PROYECTO: PARADISE TRAVEL
+=======================================================================
+
+1. IDENTIDAD DE MARCA Y PALETA DE COLORES
+-----------------------------------------------------------------------
+* Concepto: Agencia de viajes con enfoque en aventura nacional y alta 
+  montaña colombiana.
+* Colores Institucionales: 
+  - Negro (Fondo de menú y navegación principal)
+  - Turquesa/Cian (Color principal de realce: #00a0a5)
+  - Naranja Vibrante (Color secundario de llamados a la acción: #ff9f43)
+
+2. ESTRUCTURA Y ESTILOS DE LA PÁGINA PRINCIPAL
+-----------------------------------------------------------------------
+* Menú de Navegación:
+  - Barra superior fija en color negro.
+  - Logotipo del negocio ('logo paradise.png') alineado a la izquierda.
+  - Botones de navegación estilizados a la derecha.
+
+* Hero Section (Banner de Bienvenida):
+  - Ubicación: Justo debajo del menú de navegación y antes del catálogo.
+  - Fondo: Archivo local 'fondo-banner.png' (Paisaje del Valle del Cocora 
+    con líneas de neón turquesa y naranja, sin textos ni bordes).
+  - Efecto Visual: Fondo fijo ('background-attachment: fixed') para 
+    crear un efecto de desplazamiento dinámico (parallax).
+  - Textos: Letras blancas con sombreado oscuro pronunciado para 
+    garantizar una lectura perfecta sobre los neones.
+  - Botón Principal ('.boton-hero'): Color turquesa que cambia a naranja 
+    vibrante al pasar el cursor (efecto :hover) y desplaza la página 
+    automáticamente hacia el catálogo (#catalogo).
+
+3. CATÁLOGO DE DESTINOS INTERACTIVOS (Componente Hover Overlap)
+-----------------------------------------------------------------------
+* Comportamiento CSS ('.tarjeta-destino-interactiva'): Componente diseñado 
+  a la medida para folletos de 450x335px. Las imágenes se muestran 
+  ligeramente inclinadas y encimadas en forma de abanico. Al pasar el 
+  cursor sobre cualquiera de ellas, el folleto seleccionado se endereza, 
+  se agranda levemente (scale) y pasa al frente de forma fluida mediante 
+  la manipulación de capas ('z-index').
+
+* DESTINO 1: EJE CAFETERO 2026
+  - Archivos de Imagen: 'fl 1 del eje.jpeg' (izquierdo) y 'fl 2 eje.jpeg' (derecho).
+  - Información del Plan: Salidas desde Facatativá y/o Bogotá. Visitas al 
+    Parque del Café, Valle de Cocora, Salento, Filandia y Termales de 
+    Santa Rosa. Incluye transporte, 2 noches en finca con piscina y alimentación.
+  - Precios del Itinerario: Adultos $750.000 COP / Niños $700.000 COP. 
+    (Separación de cupo con $100.000 COP).
+
+* DESTINO 2: NEVADO DEL COCUY 2026
+  - Archivos de Imagen: 'fl 1 cocuy.jpeg' (izquierdo) y 'fl 2 cocuy.jpeg' (derecho).
+  - Información del Plan: Itinerario de 3 días / 2 noches con salidas desde 
+    Facatativá y/o Bogotá. Incluye aclimatación en Peñón de los Muertos, 
+    ascenso al nevado, piscinas termales, hospedaje en Güicán, transporte 
+    4x4 y políticas de pago.
+  - Precios e Instrucciones: Valor por persona $750.000 COP. Requiere 
+    apartar cupo con 2 o 3 meses de anticipación debido al control de 
+    aforo de Parques Nacionales.
+
+4. SOPORTE RESPONSIVO (Diseño para Celulares)
+-----------------------------------------------------------------------
+* Configuración de Pantallas: Implementación de reglas '@media' para 
+  pantallas menores a 768px y 650px.
+* Comportamiento: El banner de bienvenida reduce su altura y el tamaño de 
+  la letra. Las tarjetas interactivas desactivan la superposición absoluta 
+  y ordenan los flyers verticalmente (uno abajo del otro) para asegurar 
+  que toda la información sea legible en dispositivos móviles sin desbordes.
+
+5. NOTAS DE CONTROL DE ENTORNO LOCAL (VS Code)
+-----------------------------------------------------------------------
+* Organización de Archivos: Todas las imágenes del proyecto deben residir 
+  de forma local en la raíz de la carpeta 'WEB PARADISE':
+  - logo paradise.png
+  - fondo-banner.png
+  - fl 1 del eje.jpeg
+  - fl 2 eje.jpeg
+  - fl 1 cocuy.jpeg
+  - fl 2 cocuy.jpeg
+* Esto previene la rotura de enlaces externos, optimiza la velocidad de 
+  carga y cumple con los requerimientos técnicos de entrega.
+=======================================================================
