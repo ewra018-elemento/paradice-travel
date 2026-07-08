@@ -119,31 +119,59 @@ main {
     margin: 40px auto;
 }
 
-/* Úsalo en HTML como <main class="contenedor-formulario"> para vistas de login/registro */
-.contenedor-formulario {
-    max-width: 400px;
-    width: 90%;
-    background-color: #ffffff;
-    padding: 35px;
-    border-radius: 20px;
-    border-top: 5px solid #00a0a5; 
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+/* Nueva clase auxiliar para centrar la tarjeta del login en la pantalla */
+.login-page-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh; /* Le da una buena altura para centrarlo verticalmente */
+    padding: 20px;
 }
 
-main h2 {
-    color: #00a0a5;
-    margin-bottom: 25px;
+/* Úsalo en el formulario para crear la tarjeta blanca */
+.contenedor-formulario {
+    max-width: 400px;             /* Limita el ancho para que se vea estético */
+    width: 100%;
+    background-color: #ffffff !important; /* Fuerza el fondo blanco */
+    padding: 35px;
+    border-radius: 20px;
+    border-top: 5px solid #00a0a5;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    
+    /* Organiza los elementos internos uno ABAJO del otro */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;                    
+    box-sizing: border-box;
+}
+
+/* Estilos de los textos dentro de la tarjeta */
+.contenedor-formulario h2 {
+    color: #00a0a5 !important;
+    margin: 0 0 10px 0 !important;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+.contenedor-formulario label {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin-top: 5px;
+    display: block;
 }
 
 /* 5. INPUTS Y CAJAS DE TEXTO */
 input {
-    width: 100%; /* Cambiado a 100% gracias a box-sizing */
+    width: 100%; 
     padding: 12px;
-    margin-top: 8px;
+    margin-top: 5px;
     border: 2px solid #cbd5e1;
     border-radius: 8px;
     font-size: 1rem;
     outline: none;
+    text-align: center;           /* Centra el texto y el placeholder */
+    box-sizing: border-box;       /* Evita que los inputs se salgan de la tarjeta */
     transition: all 0.3s ease;
 }
 
@@ -177,7 +205,7 @@ button:hover, .boton-enlace:hover {
     box-shadow: 0 6px 15px rgba(0, 160, 165, 0.4);
 }
 
-/* 7. BANNER PRINCIPAL INTERACTIVO (HERO) */
+/* 7. BANNER PRINCIPAL INTERACTIVO  */
 .hero-banner {
     background-image: linear-gradient(rgba(10, 35, 36, 0.4), rgba(10, 35, 36, 0.5)), url('../img/fondo banner.png');
     background-size: cover;
@@ -396,7 +424,7 @@ button:hover, .boton-enlace:hover {
 /* 12. PIE DE PÁGINA (FOOTER) */
 footer {
     background-color: #1a1a1a;
-    color: #ffffff;
+    color: #351d8a;
     padding: 15px;
     font-size: 0.9rem;
     margin-top: auto;

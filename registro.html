@@ -1,50 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <link rel="stylesheet" href="css/estilos.css">
     <meta charset="UTF-8">
-    <title>Registro de Clientes - Paradise Travel</title>
-     <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <nav class="navbar">
-        <a href="index.html" class="nav-marca-enlace">
-            <div class="nav-marca">
-                <img src="img/logo paradise.png" alt="Mini Logo" class="nav-mini-logo">
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav class="nav-marca">
+        <div class="nav-marca-contenedor">
+            <a href="index.html" class="nav-marca-enlace">
+                <img src="img/logo paradise.png" alt="Logo Paradise Travel" class="nav-logo-img" width="50">
                 <span>Paradise Travel</span>
-            </div>
-        </a>
-        <ul class="nav-enlaces">
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="login.html">Ingresar</a></li>
-            <li><a href="registro.html" class="activo">Registrarse</a></li>
-        </ul>
+            </a>
+
+            <ul class="nav-enlaces">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="login.html">Ingresar</a></li>
+                <li><a href="registro.html"class="activo">Registrarse</a></li>
+                <li><a href="error.html" >Sistema</a></li>
+            </ul>
+        </div>
     </nav>
-    <header>
-        <h1><img src="logo paradise.png" alt="logo Paradise Travel" class="logo-paradise-registro">Paradise Travel - Registro de Viajeros</h1>
-    </header>
-    <main>
-        <form>
-            <h2>Datos Básicos del Cliente</h2>
-            
-            <label for="nombres">Nombres:</label>
-            <input type="text" id="nombres" required>
-            <br><br>
+<header>
+    <h1>Paradise Travel - Registro de Viajeros</h1>
+</header>
 
-            <label for="apellidos">Apellidos:</label>
-            <input type="text" id="apellidos" required>
-            <br><br>
-
-            <label for="cedula">Cédula de Ciudadanía:</label>
-            <input type="number" id="cedula" required>
-            <br><br>
-
-            <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-            <input type="date" id="fecha_nacimiento" required>
-            <br><br>
-
-            <button type="submit">Crear Cuenta de Viajero</button>
-        </form>
-    </main>
+  <main class="login-page-wrapper">
+    
+    <form class="contenedor-formulario">
+        <h2>Datos Básicos del Cliente</h2>
+        
+        <label for="nombres">Nombres:</label>
+        <input type="text" id="nombres" required>
+        
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" required>
+        
+        <label for="cedula">Cédula de Ciudadanía:</label>
+        <input type="text" id="cedula" required>
+        
+        <label for="nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="nacimiento" required>
+        
+        <button type="submit">Registrarse</button>
+    </form>
+    
 </body>
 </html>
